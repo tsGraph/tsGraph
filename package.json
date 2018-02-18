@@ -1,7 +1,7 @@
 {
-    "name": "mxgraph",
+    "name": "tsgraph",
     "version": "3.9.1",
-    "description": "mxGraph is a fully client side JavaScript diagramming library. It is the underlying technology that powers the drawing functionality that you see in https://www.draw.io.",
+    "description": "tsGraph is a fork of mxGraph which aims to be compatible with TypeScript, mxGraph is a fully client side JavaScript diagramming library. It is the underlying technology that powers the drawing functionality that you see in https://www.draw.io.",
     "private": true,
     "main": "javascript/mxClient.js",
     "dependencies": {
@@ -12,15 +12,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/jgraph/mxgraph-js.git"
+        "url": "https://github.com/tsgraph/tsgraph.git"
     },
     "author": {
-        "name": "JGraph Ltd",
-        "email": "support@jgraph.com"
+        "name": "Nic O'Connor",
+        "email": "tsGraph17@gmail.com"
     },
-    "license": "mxGraph",
+    "license": "Apache 2.0",
     "bugs": {
-        "url": "https://github.com/jgraph/mxgraph-js/issues"
+        "url": "https://github.com/tsgraph/tsgraph/issues"
     },
-    "homepage": "https://github.com/jgraph/mxgraph-js"
+    "homepage": "https://github.com/tsgraph/tsgraph"
 }
