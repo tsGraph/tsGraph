@@ -1,0 +1,15 @@
+.lock-wscript
+.gitignore
+.svn/
+.hg/
+.git/
+CVS/
+*~
+*.bak
+*.kate-swp
+node_modules/
+npm-debug.log
+javascript
+.idea
+
+
