@@ -1,7 +1,11 @@
 # tsGraph
 tsGraph is Fork of [mxGraph](https://github.com/jgraph/mxgraph) JS library
 
-tsGraph is currently not published to npm to install 
+### Installation
 ```
-npm install git+https://github.com/tsgraph/tsgraph.git#master
+npm install --save tsgraph
+```
+or directly from github
+```
+npm install --save git+https://github.com/tsGraph/tsGraph.git
 ```
