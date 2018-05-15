@@ -156,6 +156,11 @@ export default [
     plugins: [
       copy({
         "./@types/index.d.ts": "dist/index.d.ts",
+        "./javascript/init.js" : "./dist/init.js",
+        "./javascript/examples/grapheditor/www/images" : "./dist/images",
+        "./javascript/examples/grapheditor/www/resources" : "./dist/resources",
+        "./javascript/examples/grapheditor/www/stencils" : "./dist/stencils",
+        "./javascript/examples/grapheditor/www/styles" : "./dist/styles",
         verbose: true
       })
     ],
