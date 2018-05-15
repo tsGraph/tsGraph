@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "es5",
+    "module": "amd",
+    "outFile": "./build/build.js",
+    "strict": false,
+    "typeRoots": [
+      "@types"
+    ]
+  },
+  "files": [
+    "javascript/mxClient.js",
+    "javascript/examples/grapheditor/www/sanitizer/sanitizer.min.js",
+    "javascript/examples/grapheditor/www/jscolor/jscolor.js",
+    "javascript/examples/grapheditor/www/js/EditorUi.js",
+    "javascript/examples/grapheditor/www/js/Editor.js",
+    "javascript/examples/grapheditor/www/js/Sidebar.js",
+    "javascript/examples/grapheditor/www/js/Graph.js",
+    "javascript/examples/grapheditor/www/js/Shapes.js",
+    "javascript/examples/grapheditor/www/js/Actions.js",
+    "javascript/examples/grapheditor/www/js/Menus.js",
+    "javascript/examples/grapheditor/www/js/Format.js",
+    "javascript/examples/grapheditor/www/js/Toolbar.js",
+    "javascript/examples/grapheditor/www/js/Dialogs.js"
+],
+  "exclude": [
+    "node_modules"
+  ]
+}

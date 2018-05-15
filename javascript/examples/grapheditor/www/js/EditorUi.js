@@ -4,7 +4,7 @@
 /**
  * Constructs a new graph editor
  */
-EditorUi = function(editor, container, lightbox)
+var EditorUi = function(editor, container, lightbox)
 {
 	mxEventSource.call(this);
 	

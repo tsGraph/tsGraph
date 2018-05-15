@@ -14,7 +14,7 @@
   "scripts": {
     "prepare": "rollup -c && rm -rf ./tmp",
     "prepublishOnly": "rollup -c && rm -rf ./tmp",
-    "build": "rollup -c && rm -rf ./tmp"
+    "build": "tsc && rollup -c && rm -rf ./tmp && rm -rf ./build"
   },
   "repository": {
     "type": "git",

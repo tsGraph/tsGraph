@@ -82,7 +82,7 @@ function Sidebar(editorUi, container)
  */
 Sidebar.prototype.init = function()
 {
-	var dir = STENCIL_PATH;
+	var dir = window.STENCIL_PATH;
 	
 	this.addSearchPalette(true);
 	this.addGeneralPalette(true);
@@ -216,6 +216,12 @@ Sidebar.prototype.defaultImageWidth = 80;
  * Specifies the height for clipart images. Default is 80.
  */
 Sidebar.prototype.defaultImageHeight = 80;
+Sidebar.prototype.triangleUp = IMAGE_PATH + '/triangle-up.png';
+Sidebar.prototype.triangleRight = IMAGE_PATH + '/triangle-right.png';
+Sidebar.prototype.triangleDown = IMAGE_PATH + '/triangle-down.png';
+Sidebar.prototype.triangleLeft = IMAGE_PATH + '/triangle-left.png';
+Sidebar.prototype.refreshTarget = IMAGE_PATH + '/refresh.png';
+Sidebar.prototype.roundDrop = IMAGE_PATH + '/round-drop.png';
 
 /**
  * Adds all palettes to the sidebar.

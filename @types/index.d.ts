@@ -2,7 +2,6 @@
 // Project: https://github.com/jgraph/mxgraph
 // Definitions by: Lars Gleim <https://github.com/lgleim>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
 export declare function MxGraphFactory(opts: {
     /** Specifies the path in mxClient.basePath. */
     mxBasePath?: string;
@@ -7023,7 +7022,7 @@ export declare function MxGraphFactory(opts: {
         /**
             * Holds the user object. Default is null.
             */
-        value: Value;
+        value: any;
         /**
             * Holds the <mxGeometry>. Default is null.
             */
@@ -19530,32 +19529,6 @@ export declare function MxGraphFactory(opts: {
         afterDecode(dec: any, node: any, obj: any): any;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /**
         * A hierarchical layout algorithm.
         *
@@ -20489,3 +20462,20 @@ export declare function MxGraphFactory(opts: {
             */
         extendedDfs(parent: any, root: any, connectingEdge: any, visitor: any, seen: any, ancestors: any, childHash: any, layer: any): void;
     }
+    
+    /* ----------------------------
+        Exports for graph Editor
+        
+     */
+    
+    declare var EditorUi: any;
+    declare var Editor: any;
+    declare var Sidebar: any;
+    declare var Graph: any;
+    declare var Shapes: any;
+    declare var Actions: any;
+    declare var Menus: any;
+    declare var Format: any;
+    declare var Toolbar: any;
+    declare var Dialogs: any;
+    

@@ -3,8 +3,8 @@ import copy from 'rollup-plugin-copy';
 const fs = require("fs-extra");
 
 // Copy mxClient and append the exports
-fs.copySync('./javascript/mxClient.js', './tmp/mxClient.js');
-fs.appendFileSync('./tmp/mxClient.js', `
+fs.copySync('./build/build.js', './tmp/build.js');
+fs.appendFileSync('./tmp/build.js', `
 export default {
     mxClient,
     mxLog,
@@ -137,12 +137,22 @@ export default {
     mxGenericChangeCodec,
     mxStylesheetCodec,
     mxDefaultToolbarCodec,
+    EditorUi,
+    Editor,
+    Sidebar,
+    Graph, 
+    Shapes,
+    Actions,
+    Menus,
+    Format, 
+    Toolbar, 
+    Dialogs
 };
 `);
 
 export default [
   {
-    input: 'tmp/mxClient.js',
+    input: 'tmp/build.js',
     plugins: [
       copy({
         "./@types/index.d.ts": "dist/index.d.ts",
@@ -150,9 +160,13 @@ export default [
       })
     ],
     name: 'tsgraph',
-    intro: 'var mxLoadResources = false, mxForceIncludes, mxResourceExtension, mxLoadStylesheets;',
+    intro: `
+      var mxLoadResources = false, mxForceIncludes, mxResourceExtension, mxLoadStylesheets, mxObjectCodec;
+      var urlParams = {};
+      var Shapes, Graph, Dialogs, HoverIcons;
+     `,
     output: [
-      { file: pkg.main, format: 'umd' }
+      { file: pkg.main, format: 'umd', strict: false},
     ]
   }
 ]
