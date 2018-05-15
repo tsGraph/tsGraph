@@ -1,6 +1,6 @@
 {
   "name": "tsgraph",
-  "version": "3.9.1",
+  "version": "3.9.3",
   "description": "tsGraph is a fork of mxGraph which aims to be compatible with TypeScript, mxGraph is a fully client side JavaScript diagramming library. It is the underlying technology that powers the drawing functionality that you see in https://www.draw.io.",
   "main": "./dist/bundle.js",
   "types": "./dist/index.d.ts",
@@ -12,8 +12,8 @@
     "typescript": "^2.7.2"
   },
   "scripts": {
-    "prepare": "rollup -c && rm -rf ./tmp",
-    "prepublishOnly": "rollup -c && rm -rf ./tmp",
+    "prepare": "tsc && rollup -c && rm -rf ./tmp && rm -rf ./build",
+    "prepublishOnly": "tsc && rollup -c && rm -rf ./tmp && rm -rf ./build",
     "build": "tsc && rollup -c && rm -rf ./tmp && rm -rf ./build"
   },
   "repository": {
