@@ -10,7 +10,6 @@ CVS/
 node_modules/
 npm-debug.log
 javascript
-@types
 tmp
 .idea
 

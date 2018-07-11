@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "module": "amd",
+    "target": "es5",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "../@types"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

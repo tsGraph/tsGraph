@@ -155,7 +155,6 @@ export default [
     input: 'tmp/build.js',
     plugins: [
       copy({
-        "./@types/index.d.ts": "dist/index.d.ts",
         "./javascript/init.js" : "./dist/init.js",
         "./javascript/examples/grapheditor/www/images" : "./dist/images",
         "./javascript/examples/grapheditor/www/resources" : "./dist/resources",

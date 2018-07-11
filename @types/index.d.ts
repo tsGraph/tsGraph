@@ -20467,15 +20467,16 @@ export declare function MxGraphFactory(opts: {
         Exports for graph Editor
         
      */
+
+export declare var Editor: any;
+export declare var Graph: any;
+export declare var Shapes: any;
+export declare var Actions: any;
+export declare var Menus: any;
+export declare var Format: any;
+export declare var Toolbar: any;
+export declare var Dialogs: any;
     
-    declare var EditorUi: any;
-    declare var Editor: any;
-    declare var Sidebar: any;
-    declare var Graph: any;
-    declare var Shapes: any;
-    declare var Actions: any;
-    declare var Menus: any;
-    declare var Format: any;
-    declare var Toolbar: any;
-    declare var Dialogs: any;
+export * from './Sidebar';
+export * from './EditorUi';
     
