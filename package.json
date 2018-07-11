@@ -14,8 +14,7 @@
   "scripts": {
     "prepare": "npm run build",
     "prepublishOnly": "npm run build",
-    "buildDecorators": "cd ./typescript && tsc --emitDeclarationOnly",
-    "build": "npm run buildDecorators && tsc && rollup -c && rm -rf ./tmp && rm -rf ./build"
+    "build": "tsc && rollup -c && rm -rf ./tmp && rm -rf ./build"
   },
   "repository": {
     "type": "git",
