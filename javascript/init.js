@@ -23,3 +23,6 @@ var urlParams = (function(url)
 
 IMAGE_PATH = 'images';
 STENCIL_PATH = 'stencils';
+STYLE_PATH = 'styles;';
+RESOURCES_PATH = 'resources';
+RESOURCE_BASE = RESOURCES_PATH + 'grapheditor';
