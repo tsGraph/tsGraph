@@ -1,7 +1,6 @@
 import {Sidebar} from "./Sidebar";
 import {mxEventSource} from "./mxClient";
-declare module 'tsgraph' {
-  export class EditorUi extends mxEventSource {
+export declare class EditorUi extends mxEventSource {
     actions;
     autoTranslate;
     chromelessResize;
@@ -564,4 +563,3 @@ declare module 'tsgraph' {
      */
     destroy();
   }
-}

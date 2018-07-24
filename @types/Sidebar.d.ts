@@ -1,7 +1,7 @@
 import {mxCell, mxRectangle} from "./mxClient";
 
-declare module 'tsgraph' {
-  export class Sidebar {
+
+export declare class Sidebar {
     constructor(editorUi: any, container?: any);
     
     init(): void;
@@ -376,4 +376,4 @@ declare module 'tsgraph' {
     
     destroy()
   }
-}
+

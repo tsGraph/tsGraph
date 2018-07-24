@@ -1,7 +1,7 @@
 import {mxEventSource} from "./mxClient";
 
-declare module 'tsgraph' {
-  export class Editor extends mxEventSource {
+
+export declare class Editor extends mxEventSource {
     actualSizeLargeImage;
     appName;
     args;
@@ -125,4 +125,3 @@ declare module 'tsgraph' {
     
     destroy()
   }
-}
