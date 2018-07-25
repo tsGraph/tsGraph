@@ -2,8 +2,8 @@ export * from './mxClient';
 export * from './EditorUi';
 export * from './Editor';
 export * from './Sidebar';
+export * from './Graph'
 
-export declare var Graph: any;
 export declare var Shapes: any;
 export declare var Actions: any;
 export declare var Menus: any;
