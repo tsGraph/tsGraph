@@ -193,18 +193,18 @@ export declare class Sidebar {
     /**
      * Adds the general palette to the sidebar.
      */
-    addBasicPalette(dir)
+    addBasicPalette(dir: string)
     
     
     /**
      * Adds the general palette to the sidebar.
      */
-    addMiscPalette(expand)
+    addMiscPalette(expand: boolean)
     
     /**
      * Adds the container palette to the sidebar.
      */
-    addAdvancedPalette(expand)
+    addAdvancedPalette(expand: boolean)
     
     
     /**

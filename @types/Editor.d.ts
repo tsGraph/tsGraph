@@ -1,127 +1,86 @@
 import {mxEventSource} from "./mxClient";
 
-
 export declare class Editor extends mxEventSource {
-    actualSizeLargeImage;
-    appName;
-    args;
-    autosave;
-    backgroundPageShape;
-    bg;
-    cancefalse;
-    cancelFirst;
-    cancetrue;
-    checkmarkImage;
-    chromeless;
-    closeLargeImage;
-    consumer;
-    container;
-    createSvgGrigridColor;
-    createditorUi;
-    ctrlKey;
-    dialect;
-    dialogImg;
-    done;
-    editBlankUrl;
-    editLargeImage;
-    editable;
-    editorWindow;
-    enabled;
-    execut;
-    extendCanvas;
-    filename;
-    getBackgroundPageBound;
-    getFilename;
-    getGraphBound;
-    getOrCreateFilename;
-    getPositioleft;
-    getStatus;
-    graph;
-    graphChangeListener;
-    gridColor;
-    gridImage;
-    gridSize;
-    gridSteps;
-    helpImage;
-    horizontalPageBreaks;
-    ini;
-    initStencilRegistr;
-    initialTopSpacing;
-    isExternalProtocohref;
-    layersImage;
-    layersLargeImage;
-    maximizeImage;
-    message;
-    minGridSize;
-    minPageBreakDist;
-    modified;
-    nextImage;
-    nextLargeImage;
-    onDialogCloscancel;
-    onDialogClose;
-    originalNoForeignObject;
-    pageBreakColor;
-    pageBreakDashed;
-    pageCounter;
-    pageFormat;
-    pageScale;
-    previousImage;
-    previousLargeImage;
-    printLargeImage;
-    producer;
-    readGraphStatnode;
-    resetGrap;
-    resizeListener;
-    scale;
-    setModifietrue;
-    setStatus;
-    shiftPreview1;
-    status;
-    transparentImage;
-    undoListener;
-    undoManager;
-    updateGraphComponent;
-    useLocalStorage;
-    useScrollbarsForPanning;
-    validateBackgroundStyle;
-    verticalPageBreaks;
-    view;
-    zIndex;
-    zoomFitImage;
-    zoomInImage;
-    zoomInLargeImage;
-    zoomOutImage;
-    zoomOutLargeImage;
-    
-    constructor(chromeless?, themes?, model?, graph?, editable?)
-    
-    init()
-    
-    setAutosave(value)
-    
-    getEditBlankUrl(params)
-    
-    editAsNew(xml, title)
-    
-    createGraph(themes, model)
-    
-    resetGraph()
-    
-    readGraphState(node)
-    
-    setGraphXml(node)
-    
-    getGraphXml(ignoreSelection)
-    
-    updateGraphComponents()
-    
-    setModified(value)
-    
-    setFilename(value)
-    
-    createUndoManager()
-    
-    initStencilRegistry()
-    
-    destroy()
-  }
+  actualSizeLargeImage;
+  appName;
+  autosave;
+  cancelFirst;
+  chromeless;
+  closeLargeImage;
+  ctrlKey;
+  editable;
+  editBlankUrl;
+  editLargeImage;
+  editorWindow;
+  enabled;
+  execut;
+  extendCanvas;
+  filename;
+  graph;
+  helpImage;
+  initialTopSpacing;
+  layersImage;
+  layersLargeImage;
+  maximizeImage;
+  modified;
+  nextImage;
+  nextLargeImage;
+  originalNoForeignObject;
+  pageCounter;
+  previousImage;
+  previousLargeImage;
+  printLargeImage;
+  status;
+  transparentImage;
+  undoManager;
+  useLocalStorage;
+  zoomFitImage;
+  zoomInImage;
+  zoomInLargeImage;
+  zoomOutImage;
+  zoomOutLargeImage;
+  
+  constructor(chromeless?, themes?, model?, graph?, editable?)
+  
+  init()
+  
+  createGraph(themes, model)
+  
+  createUndoManager()
+  
+  destroy()
+  
+  editAsNew(xml, title)
+  
+  getEditBlankUrl(params)
+  
+  getFilename();
+  
+  getGraphXml(ignoreSelection: boolean);
+  
+  getOrCreateFilename();
+  
+  getStatus();
+  
+  graphChangeListener(sender: any, eventObject: any): void;
+  
+  initStencilRegistry()
+  
+  readGraphState(node)
+  
+  resetGraph(): void;
+  
+  setAutosave(value)
+  
+  setFilename(value)
+  
+  setGraphXml(node)
+  
+  setModified(value)
+  
+  setStatus(value): void;
+  
+  undoListener(sender: any, evt: any): void;
+  
+  updateGraphComponents(): void;
+}
