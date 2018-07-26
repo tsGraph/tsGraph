@@ -7,7 +7,7 @@
     "outFile": "./build/build.js",
     "strict": false,
     "typeRoots": [
-      "@types"
+      "@types/**/*"
     ]
   },
   "files": [
