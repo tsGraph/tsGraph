@@ -7,7 +7,6 @@ CVS/
 *~
 *.bak
 *.kate-swp
-node_modules/
 npm-debug.log
 javascript
 tmp
