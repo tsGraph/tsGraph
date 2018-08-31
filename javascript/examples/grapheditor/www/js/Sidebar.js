@@ -2499,7 +2499,7 @@ Sidebar.prototype.createDragSource = function(elt, dropHandler, preview, cells, 
 		}
 		else
 		{
-			arrow = mxUtils.createImage(img.src);
+			arrow = mxUtils.createImage(img);
 			arrow.style.width = img.width + 'px';
 			arrow.style.height = img.height + 'px';
 		}
